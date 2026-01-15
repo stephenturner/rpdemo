@@ -4,12 +4,14 @@
 \alias{suppress_counts}
 \title{Suppress low counts}
 \usage{
-suppress_counts(x, threshold = 5)
+suppress_counts(x, threshold = 5, symbol = NA)
 }
 \arguments{
 \item{x}{a numeric vector of counts}
 
 \item{threshold}{numeric threshold for the number below which to suppress}
+
+\item{symbol}{What the suppressed values should be, default is NA}
 }
 \value{
 A vector with low counts suppressed.
@@ -20,4 +22,5 @@ This suppresses values with low counts for privacy reasons etc.
 \examples{
 suppress_counts(1:10)
 suppress_counts(1:20, threshold=10)
+suppress_counts(1:20, symbol="*")
 }
