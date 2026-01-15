@@ -1,0 +1,44 @@
+# rpdemo
+
+The goal of rpdemo is to …
+
+## Installation
+
+You can install the development version of rpdemo from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("stephenturner/rpdemo")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+``` r
+library(rpdemo)
+suppress_counts(1:20, threshold = 10)
+#>  [1] NA NA NA NA NA NA NA NA NA 10 11 12 13 14 15 16 17 18 19 20
+```
+
+What is special about using `README.Rmd` instead of just `README.md`?
+You can include R chunks like so:
+
+# Package index
+
+## All functions
+
+- [`prep_lab_data()`](https://stephenturner.github.io/rpdemo/reference/prep_lab_data.md)
+  : Prepare lab data
+- [`read_labdata()`](https://stephenturner.github.io/rpdemo/reference/read_labdata.md)
+  : Read laboratory data
+- [`rped`](https://stephenturner.github.io/rpdemo/reference/rped.md) :
+  RPED: R Package Example Data
+- [`standardize_sex()`](https://stephenturner.github.io/rpdemo/reference/standardize_sex.md)
+  : Standardize Sex Variables
+- [`suppress_counts()`](https://stephenturner.github.io/rpdemo/reference/suppress_counts.md)
+  : Suppress low counts
+- [`zipcodes`](https://stephenturner.github.io/rpdemo/reference/zipcodes.md)
+  : ZIP code data
+
